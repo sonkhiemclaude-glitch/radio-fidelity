@@ -1,0 +1,207 @@
+[
+  {
+    "file": "lorawan.npz",
+    "all_exact": true,
+    "all_within_tolerance": true,
+    "absolute_tolerance": 1e-08,
+    "relative_tolerance": 0,
+    "fields": {
+      "dev": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "t": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "lat": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "lon": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "x": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "y": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "sf": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "hdop": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "obs_msg": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "obs_gw": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "obs_rssi": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "obs_snr": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "obs_esp": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "gw_lat": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "gw_lon": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "gw_x": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "gw_y": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "gw_id": {
+        "exact": true,
+        "within_tolerance": true
+      },
+      "lat0": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "lon0": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      }
+    }
+  },
+  {
+    "file": "uji.npz",
+    "all_exact": false,
+    "all_within_tolerance": true,
+    "absolute_tolerance": 1e-08,
+    "relative_tolerance": 0,
+    "fields": {
+      "R": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "heard": {
+        "exact": true,
+        "within_tolerance": true
+      },
+      "x": {
+        "exact": false,
+        "within_tolerance": true,
+        "max_abs_difference": 1.8189894035458565e-12
+      },
+      "y": {
+        "exact": false,
+        "within_tolerance": true,
+        "max_abs_difference": 9.313225746154785e-10
+      },
+      "z": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "floor": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "bld": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "phone": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "user": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "src": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "ap_x": {
+        "exact": false,
+        "within_tolerance": true,
+        "max_abs_difference": 9.094947017729282e-13
+      },
+      "ap_y": {
+        "exact": false,
+        "within_tolerance": true,
+        "max_abs_difference": 1.862645149230957e-09
+      },
+      "ap_z": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "ap_b": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "ap_floor": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "waps": {
+        "exact": true,
+        "within_tolerance": true
+      },
+      "floor_h": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      },
+      "not_heard": {
+        "exact": true,
+        "within_tolerance": true,
+        "max_abs_difference": 0.0
+      }
+    }
+  }
+]

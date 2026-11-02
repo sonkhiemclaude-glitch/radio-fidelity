@@ -1,0 +1,29 @@
+{
+  "downloaded_utc": "2026-11-02T07:12:12.792457+00:00",
+  "files": [
+    {
+      "file": "lorawan_antwerp_gateway_locations.json.txt",
+      "url": "https://zenodo.org/records/3904158/files/lorawan_antwerp_gateway_locations.json.txt?download=1",
+      "bytes": 14896,
+      "sha256": "507f9bb266d23f59fdc2b743447cecf9c909290536e24de3f9483aaa178d374d"
+    },
+    {
+      "file": "lorawan_antwerp_2019_dataset.json.txt",
+      "url": "https://zenodo.org/records/3904158/files/lorawan_antwerp_2019_dataset.json.txt?download=1",
+      "bytes": 96148293,
+      "sha256": "f2f1fbd478cdef2b76fb8e3aae33751d332b50fc8546684d8e73fdb1505451cb"
+    },
+    {
+      "file": "uji.zip",
+      "url": "https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip",
+      "bytes": 1463759,
+      "sha256": "893512b82dfd7a7c345d84195b1c8019fbca0fa0d7820ce491ce5aa45ec3782f"
+    },
+    {
+      "file": "belgium-260801-free.shp.zip",
+      "url": "https://download.geofabrik.de/europe/belgium-260801-free.shp.zip",
+      "bytes": 1275018923,
+      "sha256": "f18b5ce432c68a60717b2f4b6c0b54a45bbe517f92c79df66efc9b254a8eb0da"
+    }
+  ]
+}

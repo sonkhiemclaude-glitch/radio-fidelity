@@ -1,0 +1,29 @@
+Data sources and redistribution notices
+
+Antwerp LoRaWAN fingerprinting dataset (2019)
+Public record: https://doi.org/10.5281/zenodo.3904158
+Licence: Creative Commons Attribution 4.0.
+Files: lorawan_antwerp_2019_dataset.json.txt and gateway_locations.json.txt.
+Derived inputs: data/lorawan.npz, candidate links and associated query predictions.
+Retain the dataset attribution and public record DOI above.
+
+UJIIndoorLoc
+Public record: https://archive.ics.uci.edu/dataset/310/ujiindoorloc
+Licence: Creative Commons Attribution 4.0.
+Derived input: data/uji.npz and training-only held-device experiment outputs.
+Retain the dataset attribution at https://archive.ics.uci.edu/dataset/310/ujiindoorloc .
+
+OpenStreetMap contributors, distributed by Geofabrik
+Dated extract: https://download.geofabrik.de/europe/belgium-260801-free.shp.zip
+Copyright and licence: https://www.openstreetmap.org/copyright (ODbL).
+Derived data: occupancy rasters, road reference points and polygon-ray geometry.
+The original submission's exact extract date was not recorded. Its processed
+caches are archived; all new geometry checks identify the pinned dated extract.
+Retain OpenStreetMap attribution and applicable ODbL terms for derived databases.
+
+raw/manifest.json records exact source URLs, sizes and SHA256 hashes for the
+revision downloads. code/download_data.py checks these pinned hashes.
+Raw archives are downloaded separately and omitted from the GitHub package.
+
+No new software licence has been assigned to the authors' source code by this
+revision process. Authors may add their chosen software licence when publishing.

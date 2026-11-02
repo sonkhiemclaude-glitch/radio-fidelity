@@ -1,0 +1,7999 @@
+{
+  "B": 2000,
+  "alpha": 0.05,
+  "loss_difference_range": "2 * clip",
+  "n_messages": 10000,
+  "n_spatial_blocks": 135,
+  "n_gateways": 31,
+  "sampling": "Independent with-replacement message draws; independent PPS block draws. Guarantees conditional on fixed corpus, not unseen deployment.",
+  "populations": [
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "risk": [
+        6.753541698876145,
+        0.9107674974442838,
+        0.6992509692180507,
+        0.7289678117673593,
+        0.5578967432309918,
+        0.6748356903287663
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "risk": [
+        7.2320941144660855,
+        0.9107674974442838,
+        0.6993094287428351,
+        0.7291032696203946,
+        0.7497854169125472,
+        1.209098538273325
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "risk": [
+        7.235234330672789,
+        0.9107674974442838,
+        0.6993094287428351,
+        0.7291032696203946,
+        0.9351430340489031,
+        2.3114007382313813
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "risk": [
+        7.235234330672789,
+        0.9107674974442838,
+        0.6993094287428351,
+        0.7291032696203946,
+        1.0903403507840086,
+        4.369364164281946
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "risk": [
+        7.999873579195026,
+        0.9821752938937417,
+        0.8748214070137397,
+        0.964131379443942,
+        0.7031375218911124,
+        0.704258898635314
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "risk": [
+        14.999154718805771,
+        1.3026656610002132,
+        1.2121580374721932,
+        1.3625395939023819,
+        1.3046203343126028,
+        1.3197656704622627
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "risk": [
+        29.9878070168061,
+        1.561936943294414,
+        1.5621201262684885,
+        1.7670309329996918,
+        2.543098608900334,
+        2.6365407049031875
+      ],
+      "global_argmin": 1,
+      "first_nonbeneficial": 1
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "risk": [
+        59.493092303550085,
+        1.6330350775360172,
+        1.7333787974180135,
+        1.981187042849614,
+        4.819539066471717,
+        5.25604536421652
+      ],
+      "global_argmin": 1,
+      "first_nonbeneficial": 1
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "risk": [
+        7.994898042846031,
+        2.247032845352095,
+        2.00859523324819,
+        2.1366332217234563,
+        0.591967945331365,
+        0.6238227370337627
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "risk": [
+        13.761715098142963,
+        2.2691532197276505,
+        2.031885147092655,
+        2.193896581531229,
+        0.8713137859745023,
+        0.9985625422975056
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "risk": [
+        16.39680603351944,
+        2.2695336669416095,
+        2.032629543316594,
+        2.1972100297954706,
+        1.23059183768092,
+        1.6429704107635634
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "risk": [
+        16.479511956956657,
+        2.2695336669416095,
+        2.032629543316594,
+        2.1972134652621316,
+        1.5938553333567604,
+        2.48135133457331
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "risk": [
+        7.998000805583165,
+        1.8091051995841136,
+        1.1025585254669308,
+        1.243384553694111,
+        0.6521838805220911,
+        0.6949885560206686
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "risk": [
+        14.801094384037121,
+        1.8372193880747276,
+        1.1727384510911472,
+        1.3445659705683586,
+        1.1486936379511805,
+        1.2805545183809466
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "risk": [
+        21.4250934700919,
+        1.8383172887753143,
+        1.1832635244786174,
+        1.3671585545451068,
+        2.1189001854456655,
+        2.492093479188346
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "risk": [
+        22.262694328235316,
+        1.8383172887753143,
+        1.1840774090394275,
+        1.3689134443536808,
+        3.753166760194324,
+        4.837132470003628
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "risk": [
+        7.664237549925543,
+        2.3572654560667416,
+        1.4882047398376197,
+        1.5151462544678307,
+        0.6155185545332218,
+        0.6664703261623884
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "risk": [
+        9.511335056546926,
+        2.3596647333713348,
+        1.5026093237983895,
+        1.5264445340060953,
+        0.9696159292207246,
+        1.202310892889397
+      ],
+      "global_argmin": 4,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "risk": [
+        9.619912206783036,
+        2.359668093026907,
+        1.5032307196269967,
+        1.5268826254437595,
+        1.527346439361172,
+        2.322500289882439
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "risk": [
+        9.619931000920348,
+        2.359668093026907,
+        1.5032307196269967,
+        1.5268826254437595,
+        2.271353391065224,
+        4.460345906604699
+      ],
+      "global_argmin": 2,
+      "first_nonbeneficial": 2
+    }
+  ],
+  "rows": [
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.993,
+      "argmin_exact": 0.993
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.337,
+      "argmin_exact": 0.663
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.239,
+      "argmin_exact": 0.761
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.1595,
+      "argmin_exact": 0.8405
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0855,
+      "argmin_exact": 0.9145
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.028,
+      "argmin_exact": 0.972
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.002,
+      "argmin_exact": 0.998
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.185,
+      "argmin_exact": 0.815
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.105,
+      "argmin_exact": 0.895
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.031,
+      "argmin_exact": 0.969
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0015,
+      "argmin_exact": 0.9985
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 512,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 0,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.071,
+      "argmin_exact": 0.929
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.014,
+      "argmin_exact": 0.986
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0005,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0015,
+      "argmin_exact": 0.9985
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0385,
+      "argmin_exact": 0.9615
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0025,
+      "argmin_exact": 0.9975
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 0,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.99,
+      "argmin_exact": 0.5155
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.62
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.664
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.711
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.7765
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.857
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.939
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.859
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.9335
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.9835
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.2525,
+      "argmin_exact": 0.7285
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.152,
+      "argmin_exact": 0.847
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0875,
+      "argmin_exact": 0.9125
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0305,
+      "argmin_exact": 0.9695
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.002,
+      "argmin_exact": 0.998
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.092,
+      "argmin_exact": 0.908
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0395,
+      "argmin_exact": 0.9605
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.006,
+      "argmin_exact": 0.994
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 512,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 1,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.5025,
+      "argmin_exact": 0.4975
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.474,
+      "argmin_exact": 0.526
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.496,
+      "argmin_exact": 0.504
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.494,
+      "argmin_exact": 0.506
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4825,
+      "argmin_exact": 0.5175
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.468,
+      "argmin_exact": 0.532
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.506,
+      "argmin_exact": 0.494
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4995,
+      "argmin_exact": 0.5005
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.5025,
+      "argmin_exact": 0.4975
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.5005,
+      "argmin_exact": 0.4995
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.515,
+      "argmin_exact": 0.485
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4905,
+      "argmin_exact": 0.5095
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4825,
+      "argmin_exact": 0.5175
+    },
+    {
+      "seed": 1,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.492,
+      "argmin_exact": 0.508
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.1345,
+      "argmin_exact": 0.8655
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.045,
+      "argmin_exact": 0.955
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.01,
+      "argmin_exact": 0.99
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0005,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0355,
+      "argmin_exact": 0.9645
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.004,
+      "argmin_exact": 0.996
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 1,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.9995,
+      "selected_counts": [
+        1,
+        1999,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 0.995
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 512,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 2,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.997,
+      "argmin_exact": 0.997
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.9995,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.859,
+      "argmin_exact": 0.859
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.9485,
+      "argmin_exact": 0.9485
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.982,
+      "argmin_exact": 0.982
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.998,
+      "argmin_exact": 0.998
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.985,
+      "argmin_exact": 0.985
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.9995,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 2,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.552,
+      "argmin_exact": 0.552
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.5875,
+      "argmin_exact": 0.5875
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.6235,
+      "argmin_exact": 0.6235
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.669,
+      "argmin_exact": 0.669
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.6955,
+      "argmin_exact": 0.6955
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.784,
+      "argmin_exact": 0.784
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.868,
+      "argmin_exact": 0.868
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.603,
+      "argmin_exact": 0.603
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.648,
+      "argmin_exact": 0.648
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.688,
+      "argmin_exact": 0.688
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.7595,
+      "argmin_exact": 0.7595
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.846,
+      "argmin_exact": 0.846
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.9255,
+      "argmin_exact": 0.9255
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.977,
+      "argmin_exact": 0.977
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 512,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 3,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.001,
+      "argmin_exact": 0.999
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 3,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 8.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.9975,
+      "argmin_exact": 0.9975
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 1.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "message_wor",
+      "n_units": 512,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 2.0,
+      "target": "message-weighted",
+      "certified": false
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 32,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 4,
+      "cap": 15.0,
+      "design": "spatial_uniform_wor",
+      "n_units": 128,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "target": "uniform-spatial-block",
+      "certified": false
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.483,
+      "argmin_exact": 0.517
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4475,
+      "argmin_exact": 0.5525
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4305,
+      "argmin_exact": 0.5695
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.408,
+      "argmin_exact": 0.592
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.366,
+      "argmin_exact": 0.634
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.318,
+      "argmin_exact": 0.682
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.256,
+      "argmin_exact": 0.744
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4675,
+      "argmin_exact": 0.5325
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.4265,
+      "argmin_exact": 0.5735
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.3895,
+      "argmin_exact": 0.6105
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.3435,
+      "argmin_exact": 0.6565
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.2615,
+      "argmin_exact": 0.7385
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.196,
+      "argmin_exact": 0.804
+    },
+    {
+      "seed": 4,
+      "cap": 30.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.123,
+      "argmin_exact": 0.877
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0445,
+      "argmin_exact": 0.9555
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0045,
+      "argmin_exact": 0.9955
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0005,
+      "argmin_exact": 0.9995
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "message_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 32,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 64,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 128,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 0.0,
+      "selected_counts": [
+        2000,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 256,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 512,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 1000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 0.0,
+      "mean_level": 1.0,
+      "selected_counts": [
+        0,
+        2000,
+        0,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    },
+    {
+      "seed": 4,
+      "cap": 60.0,
+      "design": "spatial_pps_wr",
+      "n_units": 2000,
+      "links_per_message": 31,
+      "B": 2000,
+      "harmful_count": 0,
+      "harmful_rate": 0.0,
+      "harmful_ci95": [
+        0.0,
+        0.0018427397934059364
+      ],
+      "exact_global": 1.0,
+      "mean_level": 2.0,
+      "selected_counts": [
+        0,
+        0,
+        2000,
+        0,
+        0,
+        0
+      ],
+      "argmin_harmful": 0.0,
+      "argmin_exact": 1.0
+    }
+  ],
+  "runtime_s": 56.60689377784729
+}

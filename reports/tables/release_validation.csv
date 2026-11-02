@@ -1,0 +1,14 @@
+json_path,value
+$.link_campaigns,610000
+$.synthetic_model_rows,324
+$.real_model_rows,9
+$.equal_arm_n_train,3196
+$.query_sha256,ce3086eb63a3b1bc18c19b00a20c227c37952e3d41455d1a8a7fee7cdf970d75
+$.map_synthetic_rows,72
+$.map_real_rows,6
+$.paired_spatial_interval_rows,74
+$.downstream_campaigns,432000
+$.vector_scalar_agreement,3000
+$.indoor_rows,108
+$.raw_radio_validation,True
+$.status,passed

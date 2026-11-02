@@ -1,0 +1,1219 @@
+{
+  "protocol": {
+    "B": 2000,
+    "seed": 20261102,
+    "block_sizes_m": [
+      500,
+      1000
+    ],
+    "seeds_held_fixed": 3,
+    "n_query": 12000,
+    "query_sha256": "ce3086eb63a3b1bc18c19b00a20c227c37952e3d41455d1a8a7fee7cdf970d75",
+    "statistic": "mean across three seed medians for A minus that for B; negative favors A",
+    "sampling": "whole spatial blocks drawn uniformly with replacement; paired across methods and seeds",
+    "uncertainty": "pointwise percentile 95% intervals, no multiplicity correction; conditional on trained models and spatial-bootstrap approximation"
+  },
+  "rows": [
+    {
+      "comparison": "real_mlp_minus_knn",
+      "a": [
+        "pred_real_s0_mlp.npz",
+        "pred_real_s1_mlp.npz",
+        "pred_real_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_real_s0_knn.npz",
+        "pred_real_s1_knn.npz",
+        "pred_real_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 19.59752152420386,
+      "seed_differences_m": [
+        27.857463323006186,
+        11.324516214471942,
+        19.610585035133454
+      ],
+      "ci95_m": [
+        -9.0349748979937,
+        49.03601662006485
+      ]
+    },
+    {
+      "comparison": "real_transformer_minus_knn",
+      "a": [
+        "pred_real_s0_transformer.npz",
+        "pred_real_s1_transformer.npz",
+        "pred_real_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_real_s0_knn.npz",
+        "pred_real_s1_knn.npz",
+        "pred_real_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -36.03287928696724,
+      "seed_differences_m": [
+        -48.130327888063505,
+        -21.6196332622269,
+        -38.3486767106113
+      ],
+      "ci95_m": [
+        -66.37260867229175,
+        -8.287065653829622
+      ]
+    },
+    {
+      "comparison": "free_guess_knn_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_knn.npz",
+        "pred_free_guess_F5_s1_knn.npz",
+        "pred_free_guess_F5_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -12.8021162898818,
+      "seed_differences_m": [
+        -31.31419147392944,
+        3.6935323203940698,
+        -10.785689716110028
+      ],
+      "ci95_m": [
+        -54.24259623262013,
+        21.647752071294114
+      ]
+    },
+    {
+      "comparison": "free_guess_mlp_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_mlp.npz",
+        "pred_free_guess_F4_s1_mlp.npz",
+        "pred_free_guess_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_mlp.npz",
+        "pred_free_guess_F5_s1_mlp.npz",
+        "pred_free_guess_F5_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -347.6366742039309,
+      "seed_differences_m": [
+        -708.8585951133612,
+        -306.76776115902317,
+        -27.283666339408455
+      ],
+      "ci95_m": [
+        -480.5900261079931,
+        -233.52000674844103
+      ]
+    },
+    {
+      "comparison": "free_guess_transformer_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_transformer.npz",
+        "pred_free_guess_F5_s1_transformer.npz",
+        "pred_free_guess_F5_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -41.561205858879134,
+      "seed_differences_m": [
+        -67.15045894984314,
+        -51.073664192320166,
+        -6.459494434474095
+      ],
+      "ci95_m": [
+        -75.3589526452511,
+        -19.20685982008811
+      ]
+    },
+    {
+      "comparison": "free_guess_F4_transformer_minus_knn",
+      "a": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -16.156827017645657,
+      "seed_differences_m": [
+        -13.244100034845587,
+        4.242971470905786,
+        -39.469352488997174
+      ],
+      "ci95_m": [
+        -53.568420894136786,
+        11.923276296853773
+      ]
+    },
+    {
+      "comparison": "free_oracle_knn_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_knn.npz",
+        "pred_free_oracle_F5_s1_knn.npz",
+        "pred_free_oracle_F5_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -5.113237931000981,
+      "seed_differences_m": [
+        -5.113237931000981,
+        -5.113237931000981,
+        -5.113237931000981
+      ],
+      "ci95_m": [
+        -25.56926394978057,
+        10.363283310559972
+      ]
+    },
+    {
+      "comparison": "free_oracle_mlp_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_mlp.npz",
+        "pred_free_oracle_F4_s1_mlp.npz",
+        "pred_free_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_mlp.npz",
+        "pred_free_oracle_F5_s1_mlp.npz",
+        "pred_free_oracle_F5_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 3.158504528254525,
+      "seed_differences_m": [
+        18.824017341097147,
+        36.111378533572406,
+        -45.45988228990598
+      ],
+      "ci95_m": [
+        -26.05442130380746,
+        24.506710244449508
+      ]
+    },
+    {
+      "comparison": "free_oracle_transformer_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_transformer.npz",
+        "pred_free_oracle_F5_s1_transformer.npz",
+        "pred_free_oracle_F5_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -15.731998874951822,
+      "seed_differences_m": [
+        -39.10575354834492,
+        14.388624532627432,
+        -22.47886760913798
+      ],
+      "ci95_m": [
+        -34.35096866064807,
+        0.6649968861478553
+      ]
+    },
+    {
+      "comparison": "free_oracle_F4_transformer_minus_knn",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -112.5449835942169,
+      "seed_differences_m": [
+        -136.1738738295549,
+        -90.09370271239129,
+        -111.36737424070452
+      ],
+      "ci95_m": [
+        -146.67188641252488,
+        -86.68851824235067
+      ]
+    },
+    {
+      "comparison": "free_knn_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 73.25066705373975,
+      "seed_differences_m": [
+        79.39696193086422,
+        62.40307368328081,
+        77.95196554707422
+      ],
+      "ci95_m": [
+        17.750404270544784,
+        122.78349786190653
+      ]
+    },
+    {
+      "comparison": "free_mlp_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_mlp.npz",
+        "pred_free_oracle_F4_s1_mlp.npz",
+        "pred_free_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_mlp.npz",
+        "pred_free_guess_F4_s1_mlp.npz",
+        "pred_free_guess_F4_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -214.03686580138572,
+      "seed_differences_m": [
+        -3.8674071448646146,
+        -582.2711183719623,
+        -55.97207188733023
+      ],
+      "ci95_m": [
+        -294.7895745186046,
+        -135.21782624701476
+      ]
+    },
+    {
+      "comparison": "free_transformer_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -23.137489522831498,
+      "seed_differences_m": [
+        -43.5328118638451,
+        -31.93360050001627,
+        6.053943795366877
+      ],
+      "ci95_m": [
+        -54.94936829331178,
+        -0.4290643528180618
+      ]
+    },
+    {
+      "comparison": "equal_guess_knn_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_knn.npz",
+        "pred_equal_guess_F5_s1_knn.npz",
+        "pred_equal_guess_F5_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 4.68472858528753,
+      "seed_differences_m": [
+        -16.643066859886403,
+        7.047494468477566,
+        23.649758147271427
+      ],
+      "ci95_m": [
+        -30.412511811818142,
+        38.97696533952859
+      ]
+    },
+    {
+      "comparison": "equal_guess_mlp_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_mlp.npz",
+        "pred_equal_guess_F4_s1_mlp.npz",
+        "pred_equal_guess_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_mlp.npz",
+        "pred_equal_guess_F5_s1_mlp.npz",
+        "pred_equal_guess_F5_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -278.9532181013606,
+      "seed_differences_m": [
+        -808.7791716918231,
+        -5.570107683669903,
+        -22.51037492858893
+      ],
+      "ci95_m": [
+        -456.75572982939246,
+        -164.36066586950182
+      ]
+    },
+    {
+      "comparison": "equal_guess_transformer_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_transformer.npz",
+        "pred_equal_guess_F5_s1_transformer.npz",
+        "pred_equal_guess_F5_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -28.804751959322857,
+      "seed_differences_m": [
+        -43.52766160716351,
+        -32.16484352255168,
+        -10.721750748253385
+      ],
+      "ci95_m": [
+        -65.65535395423795,
+        -7.158235925989811
+      ]
+    },
+    {
+      "comparison": "equal_guess_F4_transformer_minus_knn",
+      "a": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -10.540451579549085,
+      "seed_differences_m": [
+        -55.919792747180736,
+        45.41826137807402,
+        -21.11982336954054
+      ],
+      "ci95_m": [
+        -48.79823148356545,
+        25.183337821653172
+      ]
+    },
+    {
+      "comparison": "equal_oracle_knn_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_knn.npz",
+        "pred_equal_oracle_F5_s1_knn.npz",
+        "pred_equal_oracle_F5_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 3.1438578502929886,
+      "seed_differences_m": [
+        -19.18256047196678,
+        11.107509262702933,
+        17.506624760142813
+      ],
+      "ci95_m": [
+        -20.90408802712602,
+        39.36039924708119
+      ]
+    },
+    {
+      "comparison": "equal_oracle_mlp_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_mlp.npz",
+        "pred_equal_oracle_F4_s1_mlp.npz",
+        "pred_equal_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_mlp.npz",
+        "pred_equal_oracle_F5_s1_mlp.npz",
+        "pred_equal_oracle_F5_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 23.372868339650534,
+      "seed_differences_m": [
+        -171.13078150988144,
+        -83.89449147827474,
+        325.1438780071078
+      ],
+      "ci95_m": [
+        -29.043465654049957,
+        69.32042141550471
+      ]
+    },
+    {
+      "comparison": "equal_oracle_transformer_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_transformer.npz",
+        "pred_equal_oracle_F5_s1_transformer.npz",
+        "pred_equal_oracle_F5_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 21.78688502063066,
+      "seed_differences_m": [
+        -5.487111817052437,
+        26.29439561894833,
+        44.553371259996084
+      ],
+      "ci95_m": [
+        -2.680283701699292,
+        45.11929514455527
+      ]
+    },
+    {
+      "comparison": "equal_oracle_F4_transformer_minus_knn",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -77.7591665817049,
+      "seed_differences_m": [
+        -133.34469899377928,
+        -64.65534152619898,
+        -35.277459225136454
+      ],
+      "ci95_m": [
+        -104.83401978780961,
+        -48.25321003755104
+      ]
+    },
+    {
+      "comparison": "equal_knn_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 94.79337268487598,
+      "seed_differences_m": [
+        115.04680805598105,
+        105.3864011773793,
+        63.946908821267584
+      ],
+      "ci95_m": [
+        28.479820846238482,
+        149.96021699734658
+      ]
+    },
+    {
+      "comparison": "equal_mlp_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_mlp.npz",
+        "pred_equal_oracle_F4_s1_mlp.npz",
+        "pred_equal_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_mlp.npz",
+        "pred_equal_guess_F4_s1_mlp.npz",
+        "pred_equal_guess_F4_s2_mlp.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": -228.12495694598147,
+      "seed_differences_m": [
+        -14.937172205942147,
+        -889.9942320202603,
+        220.556533388258
+      ],
+      "ci95_m": [
+        -355.00293420579027,
+        -87.74492122843071
+      ]
+    },
+    {
+      "comparison": "equal_transformer_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "block_m": 500,
+      "n_blocks": 139,
+      "difference_m": 27.574657682720158,
+      "seed_differences_m": [
+        37.62190180938251,
+        -4.687201726893704,
+        49.78927296567167
+      ],
+      "ci95_m": [
+        -23.706994250998434,
+        80.61218607262232
+      ]
+    },
+    {
+      "comparison": "real_mlp_minus_knn",
+      "a": [
+        "pred_real_s0_mlp.npz",
+        "pred_real_s1_mlp.npz",
+        "pred_real_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_real_s0_knn.npz",
+        "pred_real_s1_knn.npz",
+        "pred_real_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 19.59752152420386,
+      "seed_differences_m": [
+        27.857463323006186,
+        11.324516214471942,
+        19.610585035133454
+      ],
+      "ci95_m": [
+        -16.785020490291334,
+        51.90079520532552
+      ]
+    },
+    {
+      "comparison": "real_transformer_minus_knn",
+      "a": [
+        "pred_real_s0_transformer.npz",
+        "pred_real_s1_transformer.npz",
+        "pred_real_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_real_s0_knn.npz",
+        "pred_real_s1_knn.npz",
+        "pred_real_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -36.03287928696724,
+      "seed_differences_m": [
+        -48.130327888063505,
+        -21.6196332622269,
+        -38.3486767106113
+      ],
+      "ci95_m": [
+        -73.751666917016,
+        -7.823218912747531
+      ]
+    },
+    {
+      "comparison": "free_guess_knn_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_knn.npz",
+        "pred_free_guess_F5_s1_knn.npz",
+        "pred_free_guess_F5_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -12.8021162898818,
+      "seed_differences_m": [
+        -31.31419147392944,
+        3.6935323203940698,
+        -10.785689716110028
+      ],
+      "ci95_m": [
+        -80.1823866315884,
+        16.0604834563499
+      ]
+    },
+    {
+      "comparison": "free_guess_mlp_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_mlp.npz",
+        "pred_free_guess_F4_s1_mlp.npz",
+        "pred_free_guess_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_mlp.npz",
+        "pred_free_guess_F5_s1_mlp.npz",
+        "pred_free_guess_F5_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -347.6366742039309,
+      "seed_differences_m": [
+        -708.8585951133612,
+        -306.76776115902317,
+        -27.283666339408455
+      ],
+      "ci95_m": [
+        -539.2088912074964,
+        -209.17756941052872
+      ]
+    },
+    {
+      "comparison": "free_guess_transformer_F4_minus_F5",
+      "a": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F5_s0_transformer.npz",
+        "pred_free_guess_F5_s1_transformer.npz",
+        "pred_free_guess_F5_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -41.561205858879134,
+      "seed_differences_m": [
+        -67.15045894984314,
+        -51.073664192320166,
+        -6.459494434474095
+      ],
+      "ci95_m": [
+        -122.51319423898961,
+        -17.320633900160907
+      ]
+    },
+    {
+      "comparison": "free_guess_F4_transformer_minus_knn",
+      "a": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -16.156827017645657,
+      "seed_differences_m": [
+        -13.244100034845587,
+        4.242971470905786,
+        -39.469352488997174
+      ],
+      "ci95_m": [
+        -93.45310565218222,
+        11.67435662225938
+      ]
+    },
+    {
+      "comparison": "free_oracle_knn_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_knn.npz",
+        "pred_free_oracle_F5_s1_knn.npz",
+        "pred_free_oracle_F5_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -5.113237931000981,
+      "seed_differences_m": [
+        -5.113237931000981,
+        -5.113237931000981,
+        -5.113237931000981
+      ],
+      "ci95_m": [
+        -25.42407270947903,
+        13.398479846635414
+      ]
+    },
+    {
+      "comparison": "free_oracle_mlp_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_mlp.npz",
+        "pred_free_oracle_F4_s1_mlp.npz",
+        "pred_free_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_mlp.npz",
+        "pred_free_oracle_F5_s1_mlp.npz",
+        "pred_free_oracle_F5_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 3.158504528254525,
+      "seed_differences_m": [
+        18.824017341097147,
+        36.111378533572406,
+        -45.45988228990598
+      ],
+      "ci95_m": [
+        -24.178705211858013,
+        28.09413675004867
+      ]
+    },
+    {
+      "comparison": "free_oracle_transformer_F4_minus_F5",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F5_s0_transformer.npz",
+        "pred_free_oracle_F5_s1_transformer.npz",
+        "pred_free_oracle_F5_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -15.731998874951822,
+      "seed_differences_m": [
+        -39.10575354834492,
+        14.388624532627432,
+        -22.47886760913798
+      ],
+      "ci95_m": [
+        -40.736776648369386,
+        2.3547765588120217
+      ]
+    },
+    {
+      "comparison": "free_oracle_F4_transformer_minus_knn",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -112.5449835942169,
+      "seed_differences_m": [
+        -136.1738738295549,
+        -90.09370271239129,
+        -111.36737424070452
+      ],
+      "ci95_m": [
+        -158.0530286004715,
+        -77.84433093965977
+      ]
+    },
+    {
+      "comparison": "free_knn_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_knn.npz",
+        "pred_free_oracle_F4_s1_knn.npz",
+        "pred_free_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_knn.npz",
+        "pred_free_guess_F4_s1_knn.npz",
+        "pred_free_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 73.25066705373975,
+      "seed_differences_m": [
+        79.39696193086422,
+        62.40307368328081,
+        77.95196554707422
+      ],
+      "ci95_m": [
+        -34.13646948524914,
+        119.97471871398476
+      ]
+    },
+    {
+      "comparison": "free_mlp_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_mlp.npz",
+        "pred_free_oracle_F4_s1_mlp.npz",
+        "pred_free_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_mlp.npz",
+        "pred_free_guess_F4_s1_mlp.npz",
+        "pred_free_guess_F4_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -214.03686580138572,
+      "seed_differences_m": [
+        -3.8674071448646146,
+        -582.2711183719623,
+        -55.97207188733023
+      ],
+      "ci95_m": [
+        -365.76875898931826,
+        -117.89737299904611
+      ]
+    },
+    {
+      "comparison": "free_transformer_F4_fitted_minus_prior",
+      "a": [
+        "pred_free_oracle_F4_s0_transformer.npz",
+        "pred_free_oracle_F4_s1_transformer.npz",
+        "pred_free_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_free_guess_F4_s0_transformer.npz",
+        "pred_free_guess_F4_s1_transformer.npz",
+        "pred_free_guess_F4_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -23.137489522831498,
+      "seed_differences_m": [
+        -43.5328118638451,
+        -31.93360050001627,
+        6.053943795366877
+      ],
+      "ci95_m": [
+        -79.33552100124388,
+        -1.032865260087416
+      ]
+    },
+    {
+      "comparison": "equal_guess_knn_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_knn.npz",
+        "pred_equal_guess_F5_s1_knn.npz",
+        "pred_equal_guess_F5_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 4.68472858528753,
+      "seed_differences_m": [
+        -16.643066859886403,
+        7.047494468477566,
+        23.649758147271427
+      ],
+      "ci95_m": [
+        -31.550842170045964,
+        38.51648740044131
+      ]
+    },
+    {
+      "comparison": "equal_guess_mlp_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_mlp.npz",
+        "pred_equal_guess_F4_s1_mlp.npz",
+        "pred_equal_guess_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_mlp.npz",
+        "pred_equal_guess_F5_s1_mlp.npz",
+        "pred_equal_guess_F5_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -278.9532181013606,
+      "seed_differences_m": [
+        -808.7791716918231,
+        -5.570107683669903,
+        -22.51037492858893
+      ],
+      "ci95_m": [
+        -523.5663593655429,
+        -139.98361228694063
+      ]
+    },
+    {
+      "comparison": "equal_guess_transformer_F4_minus_F5",
+      "a": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F5_s0_transformer.npz",
+        "pred_equal_guess_F5_s1_transformer.npz",
+        "pred_equal_guess_F5_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -28.804751959322857,
+      "seed_differences_m": [
+        -43.52766160716351,
+        -32.16484352255168,
+        -10.721750748253385
+      ],
+      "ci95_m": [
+        -76.27604727064598,
+        -6.935519998043375
+      ]
+    },
+    {
+      "comparison": "equal_guess_F4_transformer_minus_knn",
+      "a": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -10.540451579549085,
+      "seed_differences_m": [
+        -55.919792747180736,
+        45.41826137807402,
+        -21.11982336954054
+      ],
+      "ci95_m": [
+        -66.9882174415826,
+        17.153001364688762
+      ]
+    },
+    {
+      "comparison": "equal_oracle_knn_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_knn.npz",
+        "pred_equal_oracle_F5_s1_knn.npz",
+        "pred_equal_oracle_F5_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 3.1438578502929886,
+      "seed_differences_m": [
+        -19.18256047196678,
+        11.107509262702933,
+        17.506624760142813
+      ],
+      "ci95_m": [
+        -28.185048941407125,
+        38.98861068882654
+      ]
+    },
+    {
+      "comparison": "equal_oracle_mlp_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_mlp.npz",
+        "pred_equal_oracle_F4_s1_mlp.npz",
+        "pred_equal_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_mlp.npz",
+        "pred_equal_oracle_F5_s1_mlp.npz",
+        "pred_equal_oracle_F5_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 23.372868339650534,
+      "seed_differences_m": [
+        -171.13078150988144,
+        -83.89449147827474,
+        325.1438780071078
+      ],
+      "ci95_m": [
+        -49.02467236011334,
+        73.30169643307991
+      ]
+    },
+    {
+      "comparison": "equal_oracle_transformer_F4_minus_F5",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F5_s0_transformer.npz",
+        "pred_equal_oracle_F5_s1_transformer.npz",
+        "pred_equal_oracle_F5_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 21.78688502063066,
+      "seed_differences_m": [
+        -5.487111817052437,
+        26.29439561894833,
+        44.553371259996084
+      ],
+      "ci95_m": [
+        -7.149117472404491,
+        56.05937575222502
+      ]
+    },
+    {
+      "comparison": "equal_oracle_F4_transformer_minus_knn",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -77.7591665817049,
+      "seed_differences_m": [
+        -133.34469899377928,
+        -64.65534152619898,
+        -35.277459225136454
+      ],
+      "ci95_m": [
+        -106.82754646999149,
+        -44.2804655417603
+      ]
+    },
+    {
+      "comparison": "equal_knn_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_knn.npz",
+        "pred_equal_oracle_F4_s1_knn.npz",
+        "pred_equal_oracle_F4_s2_knn.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_knn.npz",
+        "pred_equal_guess_F4_s1_knn.npz",
+        "pred_equal_guess_F4_s2_knn.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 94.79337268487598,
+      "seed_differences_m": [
+        115.04680805598105,
+        105.3864011773793,
+        63.946908821267584
+      ],
+      "ci95_m": [
+        -38.880680760509925,
+        137.72976262477817
+      ]
+    },
+    {
+      "comparison": "equal_mlp_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_mlp.npz",
+        "pred_equal_oracle_F4_s1_mlp.npz",
+        "pred_equal_oracle_F4_s2_mlp.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_mlp.npz",
+        "pred_equal_guess_F4_s1_mlp.npz",
+        "pred_equal_guess_F4_s2_mlp.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": -228.12495694598147,
+      "seed_differences_m": [
+        -14.937172205942147,
+        -889.9942320202603,
+        220.556533388258
+      ],
+      "ci95_m": [
+        -495.9273987852311,
+        -33.66441131645213
+      ]
+    },
+    {
+      "comparison": "equal_transformer_F4_fitted_minus_prior",
+      "a": [
+        "pred_equal_oracle_F4_s0_transformer.npz",
+        "pred_equal_oracle_F4_s1_transformer.npz",
+        "pred_equal_oracle_F4_s2_transformer.npz"
+      ],
+      "b": [
+        "pred_equal_guess_F4_s0_transformer.npz",
+        "pred_equal_guess_F4_s1_transformer.npz",
+        "pred_equal_guess_F4_s2_transformer.npz"
+      ],
+      "block_m": 1000,
+      "n_blocks": 49,
+      "difference_m": 27.574657682720158,
+      "seed_differences_m": [
+        37.62190180938251,
+        -4.687201726893704,
+        49.78927296567167
+      ],
+      "ci95_m": [
+        -68.89831530457478,
+        85.03341320077679
+      ]
+    }
+  ],
+  "runtime_s": 14.546515703201294
+}
